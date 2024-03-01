@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="script.js"></script>
+
+    <!-- <iframe width="100%" height="710" src="https://www.youtube.com/embed/G4wUk8O8yGk?si=418PlUO1TTCtVF93" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+</head>
+<body>
+    <h1 id="header" onclick="" style="border: 5px solid red;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere dolorum sit sapiente, commodi veritatis vel ut itaque illo dignissimos.</h1> -->
+
+    <!-- <div id="outer">
+        <div id="inner"><button style="border-color: aqua;">Inner</button></div>
+    </div>
+    <script> 
+        // document.write("<h1>Hello World<br><br></h1>");
+        // document.write("Hello from        ");
+        // for(var a=0; a<10; a++){
+        //     for(var b=1; b<=10; b++){
+        //         document.write(a*10 + b + " ");
+        //     }
+        //     document.write("<br>");
+        // }
+        // var x = [
+        //     ["Harry", 18, "Male", "B.Com"],
+        //     ["Sunny", 19, "Male", "BCA"],
+        //     ["Sarah", 18, "Female", "BCA"],
+        //     ["Tom", 17, "Male", "B.A."]
+        // ];
+
+        // --------------------------------------------------------------
+        
+        // // var a = new Array();
+        // for(var a=0; a<4; a++){
+        //     for(var b=0; b<4; b++){
+        //         document.write(x[a][b], "<br>")
+        //     }
+        // }
+
+        // --------------------------------------------------------
+        
+        // var a = ["Sanjay", "Aman", "Naman", "Atul"];
+        
+        // a.splice(1, 0, "Prakhar");
+        // var b = Array.isArray(a)
+        // var b = a.includes("Aman")
+
+        // ----------------------------------------------------------
+
+        // var a = {
+        //     firstName:"Ram",
+        //     lastName:"Kumar",
+        //     age:18,
+        //     country:"India"
+        //     // Left-side is Computed Key and Right side is Computed Value.
+        // }
+
+        // computed properties
+        // const key1 = 'objKey1';
+        // const key2 = 'objKey2';
+        // const value1 = 'objValue1';
+        // const value2 = 'objValue2';
+
+        // const computeObj = {
+        //     [key1] : value1,
+        //     [key2] : value2
+        // }
+
+        // computeObj[key1]= 10;
+        // computeObj[key2]= 20;  //OR
+        // computeObj.value1 = 100;
+
+        // ----------------------------------------------------------
+
+        // var student = [
+        //     {Name:"Ram", Age:15},
+        //     {Name:"Karan", Age:16},
+        //     {Name:"Rahul", Age:14}
+        // ];
+
+        // document.write(student[0].Name)
+
+        // -------------------------------------------------------------
+
+        // for(var i=65; i<=69;i++){
+        //     for(var j=65;j<=i;j++){
+        //         var y = String.fromCharCode(j)
+        //         document.write(y)
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // --------------------------------------------------------------------
+
+        // var str = "Javascript is a GREAT Language"
+        // document.write(str.length)
+        // var a = str.trim()
+        // document.write(a.length)
+        // document.write(str.toLowerCase())
+        // var upperCase = str.toUpperCase()
+        // document.write(upperCase.toLowerCase())
+        // document.write(str.startsWith("J"))
+        // document.write(str.endsWith("e"))
+         // document.write(str.startsWith(""))   comes as true, concept of DOM
+        // document.write(str.match("GREAT"))
+        // document.write(str.match(/is/i)) -> here g is GLOBAL and if we write i it it will be LOCAL
+        // document.write(str.replace("GREAT", "great"))
+        // document.write(str.replace(/is/g,"IS"))
+        // document.write(str.charAt(19))
+        // document.write(str.charCodeAt(19))
+        // var a = String.fromCharCode(65)
+        // document.write(a)
+        // var a = str.slice(3,10);
+        // document.write(a)
+        // var a = str.substr(2,5);
+        // var a = str.substring(3,5);
+        // document.write(a)
+
+        // ------------------------------------------------------------
+
+        // ALERT BOX or CONFIRM BOX
+        // var a = confirm("Are you sure to Submit?");
+        // if(a===true){
+        //     document.write("You are Eligible.")
+        // }
+        // else{
+        //     document.write("You are not Eligible.")
+        // }
+
+        // ------------------------------------------------------------
+
+        // PROMPT BOX
+        // var a = prompt("What is your Name?");
+        // document.write(a)
+
+        // ------------------------------------------------------------
+
+        // function
+        // var a = 10;
+        // document.write(a)
+        // function func(){
+        //     var a = 25;
+        //     document.write(a)
+        // }
+        // func()
+
+        // ------------------------------------------------------------------
+
+        // var ages = [10, 13, 18, 20];
+        // // document.write(ages+ "<br><br>");
+
+        // var b = ages.some(checkAdult);
+        // document.write(b + "<br><br>");
+
+        // function checkAdult(age){
+        //     return age>=18;
+        // }
+
+        // ---------------------------------------------------------------------
+
+        // find method returns the value of the first element in array that pass the test
+        // find method returns the index of the first element in array that pass the test
+
+        // ---------------------------------------------------------------------------
+
+        // filter() method creates an array filled with all array elements thats pass a test
+        // the fill() method fills all the elements in an array with a static value.
+
+        // -----------------------------------------------------------------------------
+
+        // var a = [1,3,5,8,10];
+        // a.map(function func(arr){
+        //     document.write(arr+"<br>");
+        // })
+
+        // --------------------------------------------------------------------------------
+
+        // var a = {
+        //     firstName: "Ram",
+        //     lastName: "Chandra",
+        //     date: 22,
+        //     location: "Ayodhya"
+        // }
+
+        // for(var i in a){
+        //     document.write(a[i])
+        // }
+
+        // ------------------------------------------------------------------------------------
+
+        // var a = ["abc", "def", "ghi", "jkl"];
+        // // document.write(Math.random()*10)
+        // function showQuotes(){
+        //     var randomQuote = Math.floor(Math.random() * a.length);
+        //     msg.innerText = a[randomQuote];
+        // }
+
+        // setInterval(function (){
+        //     showQuotes();
+        // }, 5000);
+
+        // ---------------------------------------------------------------------------------------
+
+        // var a = 5.55789;
+        // var num = a.toPrecision(2);
+        // document.write(num);
+
+        // ------------------------------------------------------------------------------------------
+
+        // var now = new Date();
+        // now.setFullYear(2020);
+
+        // document.write(now)
+
+        // -----------------------------------------------------------------------------
+
+        /*document.querySelector("#inner").addEventListener('click', function(){
+            alert('Inner Div');
+        }, true);
+
+        document.querySelector("#outer").addEventListener('click', function(){
+            alert('Outer Div');
+        }, true);*/ --->
+
+        
+        
+
+    </script>
+
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="child-C">C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </div>
+    <script src="js/dom-nav.js"></script>
+    
+</body>
+</html>

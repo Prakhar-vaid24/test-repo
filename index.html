@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            width: 200vw;
+        } */
+        #box{
+            background: red;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- <a href="#name">Click Me</a>
+    <section id="name"></section> -->
+    <!-- <button onclick="backFunction()">Back</button>
+    <button onclick="forwardFunction()">Forward</button> -->
+    <div id="box"></div>
+    <script>
+        // function backFunction(){
+        //     history.back();
+        // }   
+        // function forwardFunction(){
+        //     history.forward();
+        // }  
+        // window.addEventListener('scroll', function(){
+        //     console.log("pageYOffset :" + window.pageYOffset)
+        // });
+
+        // var box = document.querySelector("#box");
+        // console.log("Box offsetTop : " + box.offsetTop);
+        // console.log("Box offsetLeft : " + box.offsetLeft);
+
+        const target = document.querySelector("#box");
+        target.addEventListener('scroll', () => {
+            console.clear();
+            console.log("scrollTop : " + target.scrollTop);
+        });
+        
+    </script>
+</body>
+</html>
